@@ -18,7 +18,11 @@ app.use('/public/images', express.static(path.join(__dirname, '../public/images'
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors());         // to avoid cors errors
+app.use(cors(
+    origin: [""],
+    methods: ["GET","POST"],
+    credentials: true,
+));         // to avoid cors errors
 app.use(express.json());
 
 app.use('/api', UserRoutes);
