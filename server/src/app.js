@@ -8,7 +8,7 @@ const authRoutes = require('./routes/authRoutes');
 const cors = require('cors');
 const path = require('path');
 
-//main file of node 
+
 
 // Initialize Express app
 const app = express();
@@ -35,7 +35,8 @@ res.json("hello");
 })
 
 // Define the port for your server
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
+
 
 
 app.listen(PORT, () => {
