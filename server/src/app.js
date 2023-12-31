@@ -28,6 +28,10 @@ app.use(express.json());
 app.use('/api', UserRoutes);
 app.use('/api/v1/auth', authRoutes);
 
+app.get("/", (req,res) => {
+res.json("hello");
+})
+
 // Define the port for your server
 const PORT = process.env.PORT || 8000;
 
