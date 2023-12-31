@@ -19,7 +19,7 @@ app.use('/public/images', express.static(path.join(__dirname, '../public/images'
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors(
-    origin: [""],
+    origin: ["we-live-soft.vercel.app"],
     methods: ["GET","POST"],
     credentials: true,
 ));         // to avoid cors errors
