@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors(
     {
-    origin: ["we-live-soft.vercel.app"],
+    origin: ["welivesoft.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true,
     }
