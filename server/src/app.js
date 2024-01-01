@@ -30,7 +30,7 @@ app.use(express.json());
 app.use('/api', UserRoutes);
 app.use('/api/v1/auth', authRoutes);
 
-app.get("/", (req,res) => {
+app.get("/pp", (req,res) => {
 res.json("hello");
 })
 
