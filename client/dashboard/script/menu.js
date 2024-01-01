@@ -7,7 +7,7 @@
     const logoDiv = document.createElement("div");
     logoDiv.innerHTML = `
     <label for="logoImage">Logo Image:</label>
-    <img src="http://localhost:8000/public/images/${logoImage}" style="max-width: 180px;" alt="Resume" ><br><br>
+    <img src="http://welivesoft.vercel.app/public/images/${logoImage}" style="max-width: 180px;" alt="Resume" ><br><br>
     <input type="file" id="logoImage" name="logoImage" accept="image/*" ><br><br>
     `;
     logoContainer.appendChild(logoDiv);
@@ -70,7 +70,7 @@ menuForm.addEventListener("submit", async (event) => {
     const formData = new FormData(menuForm);
 
     try {
-        const response = await fetch('http://localhost:8000/api/menu', {
+        const response = await fetch('http://welivesoft.vercel.app/api/menu', {
             method: 'POST',
             body: formData,
         });
@@ -90,7 +90,7 @@ menuForm.addEventListener("submit", async (event) => {
 // get data from backend 
 async function getMenuData() {
     try {
-        const res = await fetch('http://localhost:8000/api/menu');
+        const res = await fetch('http://welivesoft.vercel.app/api/menu');
 
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
