@@ -29,7 +29,7 @@ function handleLoginSubmit(event) {
   const password = document.getElementById('password').value;
   const formData = {email, password}
 
-    fetch("http://localhost:8000/api/v1/auth/login", {
+    fetch("http://welivesoft.vercel.app/api/v1/auth/login", {
     method: "POST",
     body: JSON.stringify(formData),
     headers: {
@@ -67,7 +67,7 @@ function handleRegisterSubmit(event) {
 
   const formData = {name, phone, email, password, confirmPassword}
 
-  fetch("http://localhost:8000/api/v1/auth/register", {
+  fetch("http://welivesoft.vercel.app/api/v1/auth/register", {
     method: "POST",
     body: JSON.stringify(formData),
     headers: {
