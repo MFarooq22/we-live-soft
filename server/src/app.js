@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(cors(
     {
     origin: ["https://welivesoft.vercel.app"],
-    methods: ["GET", "POST"],
+    methods: [ "POST", "GET"],
     credentials: true,
     }
 ));         // to avoid cors errors
