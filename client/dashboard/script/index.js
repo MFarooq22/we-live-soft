@@ -81,7 +81,7 @@ socialLinksContainer.querySelectorAll(".socialLink").forEach((linkDiv, index) =>
   formData.append(`socialLinks[${index}][link]`, linkDiv.querySelector(".socialLinkLink").value);
 });
 try {
-  const response = await fetch("http://welivesoft.vercel.app/api/home", {
+  const response = await fetch("http://we-live-soft.vercel.app/api/home", {
     method: "POST",
     body: formData,
   });
@@ -99,7 +99,7 @@ try {
 fetchAndPopulateHome()
 async function fetchAndPopulateHome() {
 try {
-  const response = await fetch(`http://welivesoft.vercel.app/api/home`);
+  const response = await fetch(`http://we-live-soft.vercel.app/api/home`);
   if (response.ok) {
     const homeData = await response.json();
     console.log(homeData);
@@ -133,7 +133,7 @@ if (homeData[0].image) {
 // Add an image element to show the current image
 // For example, if you have a div with id 'currentImageContainer'
 const currentImageContainer = document.getElementById('currentImageContainer');
-currentImageContainer.innerHTML = `<img src="http://welivesoft.vercel.app/public/images/${homeData[0].image}" alt="Current Image" style="max-width: 200px;">`;
+currentImageContainer.innerHTML = `<img src="http://we-live-soft.vercel.app/public/images/${homeData[0].image}" alt="Current Image" style="max-width: 200px;">`;
 // Update 'path/to/images/' with the actual path where images are stored
 }
 }
