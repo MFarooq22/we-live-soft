@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-      const response = await fetch("http://localhost:8000/api/home");
+      const response = await fetch("http://welivesoft.vercel.app/api/home");
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
