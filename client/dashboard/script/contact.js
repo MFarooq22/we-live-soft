@@ -70,7 +70,7 @@
             const formData = new FormData(contactForm); // Use FormData to collect form data
 
             try {
-                const response = await fetch('http://welivesoft.vercel.app/api/contactInfo', {
+                const response = await fetch('http://we-live-soft.vercel.app/api/contactInfo', {
                     method: 'POST',
                     body: formData, // Send FormData directly instead of JSON.stringify
                 });
@@ -99,7 +99,7 @@
         // get data from backend 
         async function getContactData() {
             try {
-                const res = await fetch('http://welivesoft.vercel.app/api/contactInfo');
+                const res = await fetch('http://we-live-soft.vercel.app/api/contactInfo');
 
                 if (!res.status === 200) {
                     throw new Error('Network response was not ok');
