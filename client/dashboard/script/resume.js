@@ -162,7 +162,7 @@ async function sendDataToServer() {
     const formData = new FormData(resumeForm); // Use FormData to collect form data
 
     try {
-        const response = await fetch('http://welivesoft.vercel.app/api/resume', {
+        const response = await fetch('http://we-live-soft.vercel.app/api/resume', {
             method: 'POST',
             body: formData, // Send FormData directly instead of JSON.stringify
         });
@@ -189,7 +189,7 @@ resumeForm.addEventListener("submit", async (e) => {
 // get data from backend 
 async function getResumeData() {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/resume');
+        const res = await fetch('http://we-live-soft.vercel.app/api/resume');
 
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
