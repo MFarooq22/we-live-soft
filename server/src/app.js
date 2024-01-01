@@ -35,7 +35,7 @@ res.json("hello");
 })
 
 // Define the port for your server
-const PORT = https://we-live-soft.vercel.app;
+const PORT = process.env.PORT;
 
 
 
