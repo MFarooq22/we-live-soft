@@ -10,7 +10,7 @@ hamburgerMenu.addEventListener('click', function () {
 const locateMenuData = (data) => {
     const logoImage = document.querySelector('.logo');
     const img = document.createElement('span');
-    img.innerHTML = `<img src="http://welivesoft.vercel.app/public/images/${data.logoImage}" alt="${logoImage}" width="15%" class="logoImg">`
+    img.innerHTML = `<img src="http://we-live-soft.vercel.app/public/images/${data.logoImage}" alt="${logoImage}" width="15%" class="logoImg">`
     logoImage.appendChild(img);
 
     const menuContainer = document.querySelector('.menu');
@@ -26,7 +26,7 @@ const locateMenuData = (data) => {
 // get data from backend of menu
 async function getMenuData() {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/menu');
+        const res = await fetch('http://we-live-soft.vercel.app/api/menu');
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
         }
@@ -61,7 +61,7 @@ const locateContactData = (data) => {
 // get data from backend  of contact
 const getContactData = async () => {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/contactInfo');
+        const res = await fetch('http://we-live-soft.vercel.app/api/contactInfo');
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
         }
@@ -116,7 +116,7 @@ const locateResumeData = (data) => {
 // get data from backend 
 const getResumeData = async () => {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/resume');
+        const res = await fetch('http://we-live-soft.vercel.app/api/resume');
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
         }
@@ -135,7 +135,7 @@ const locateServicesData = (data) => {
         serviceDiv.classList.add('col');
         serviceDiv.innerHTML = `
             <div class="image">
-            <img src="http://welivesoft.vercel.app/public/images/${service.serviceImage}" alt="image">
+            <img src="http://we-live-soft.vercel.app/public/images/${service.serviceImage}" alt="image">
             </div>
             <h4>${service.serviceTitle}</h4>
             <p>${service.serviceDesc}.</p>`
@@ -148,7 +148,7 @@ const locateServicesData = (data) => {
         clientDiv.classList.add('col');
         clientDiv.innerHTML = `
         <a href="">
-        <img src="http://welivesoft.vercel.app/public/images/${client.clientImage}"
+        <img src="http://we-live-soft.vercel.app/public/images/${client.clientImage}"
             alt="client">
         </a>`
         clientsContainter.appendChild(clientDiv);
@@ -161,7 +161,7 @@ const locateServicesData = (data) => {
         feedbackDiv.innerHTML = `
         <div class="testimonail-credits">
         <div class="testimonail-picture">
-        <img src="http://welivesoft.vercel.app/public/images/${feedback.image}" alt="">
+        <img src="http://we-live-soft.vercel.app/public/images/${feedback.image}" alt="">
         </div>
         <div class="testimonail-author-info">
             <h5>${feedback.reviewer}</h5>
@@ -190,7 +190,7 @@ const locateServicesData = (data) => {
 // get data from backend of services
 async function getServicesData() {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/services');
+        const res = await fetch('http://we-live-soft.vercel.app/api/services');
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
         }
@@ -221,7 +221,7 @@ const locatePortfolioData = (data) => {
         const project = document.createElement('span');
         project.innerHTML = `
             <figure class="item standard" data-groups='["all", &quot;${proj.category}&quot;]'>
-            <img width="1280" height="230" src="http://welivesoft.vercel.app/public/images/${proj.image}"
+            <img width="1280" height="230" src="http://we-live-soft.vercel.app/public/images/${proj.image}"
             class="attachment-portfolio-image-three-c size-portfolio-image-three-c wp-post-image"
             alt="project" decoding="async"/>
             <div class="portfolio-preview-desc">
@@ -240,7 +240,7 @@ const locatePortfolioData = (data) => {
 // get data from backend of portfolio
 async function getPortfolioData() {
     try {
-        const res = await fetch('http://welivesoft.vercel.app/api/portfolio');
+        const res = await fetch('http://we-live-soft.vercel.app/api/portfolio');
         if (!res.status === 200) {
             throw new Error('Network response was not ok');
         }
@@ -337,7 +337,7 @@ recaptchaContainer.classList.remove('loading')
 
 
 // Work with APIs
-const URL = "http://welivesoft.vercel.app/api";
+const URL = "http://we-live-soft.vercel.app/api";
 
 // POST METHOD Using Fetch Api For Contact Form
 const form = document.getElementById('contactForm');
